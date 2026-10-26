@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sip Avenue — Independent specialty coffee roastery and café in Manila. Ethically sourced single-origin Arabica from Benguet and Sagada, slow-steeped cold brew, and laminated French pastries.">
+  <meta name="keywords" content="specialty coffee Manila, single origin Arabica, Benguet coffee, Sagada coffee, pour over, cold brew, artisan bakery">
+  <title>Sip Avenue — Specialty Coffee Roasters &amp; Tea Merchants</title>
+
+  <!-- Google Fonts: Fraunces & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+
+  <!-- Editorial Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Editorial Notice Bar -->
+  <aside class="top-notice-bar" aria-label="Announcement">
+    <div class="notice-meta">
+      <span class="notice-text">Complimentary Metro Manila delivery on orders over <strong>₱800</strong></span>
+      <span style="opacity: 0.4;">|</span>
+      <span class="notice-text">Roasting micro-batches every Tuesday &amp; Friday</span>
+    </div>
+    <button type="button" class="notice-copy-btn copy-campaign-code" data-code="RITUAL15" title="Copy campaign voucher">
+      Use code RITUAL15 for 15% off
+    </button>
+  </aside>
+
+  <!-- Minimal Horizontal Header Navigation -->
+  <header class="site-nav-header" id="siteHeader">
+    <div class="nav-layout">
+      <!-- Brand Wordmark -->
+      <a href="#hero" class="brand-block" id="brandHomeLink">
+        <span class="brand-wordmark">Sip Avenue</span>
+        <span class="brand-subtext">Specialty Roasters · Manila</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-links-menu" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-anchor active">Home</a>
+        <a href="#catalog" class="nav-anchor">Shop</a>
+        <a href="#story" class="nav-anchor">Our Story</a>
+        <a href="#campaign" class="nav-anchor">Seasonal Pair</a>
+        <a href="#journal" class="nav-anchor">Journal</a>
+        <a href="#locations" class="nav-anchor">Locations</a>
+      </nav>
+
+      <!-- Right Controls: Search, Favorites, Bag -->
+      <div class="nav-controls-right">
+        <!-- Search Trigger / Quick Focus -->
+        <button type="button" class="nav-icon-btn" id="navSearchTrigger" aria-label="Search Catalog" title="Search catalog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Favorites Button -->
+        <button type="button" class="nav-icon-btn" id="navFavBtn" aria-label="Saved Favorites" title="View saved items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="counter-tag" id="favoritesCountTag" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Bag Trigger -->
+        <button type="button" class="nav-icon-btn nav-cart-trigger" id="navCartBtn" aria-label="Shopping Bag" title="View bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>Bag</span>
+          <span class="counter-tag" id="cartCountTag">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobileToggleBtn" aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="3" y1="7" x2="21" y2="7"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="17" x2="21" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#hero" class="nav-anchor">Home</a>
+      <a href="#catalog" class="nav-anchor">Shop the Counter</a>
+      <a href="#story" class="nav-anchor">Our Story</a>
+      <a href="#campaign" class="nav-anchor">Seasonal Pair</a>
+      <a href="#journal" class="nav-anchor">Guestbook Journal</a>
+      <a href="#locations" class="nav-anchor">Café Locations</a>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- ==========================================================================
+         HERO SECTION — ASYMMETRICAL EDITORIAL COMPOSITION
+         ========================================================================== -->
+    <section class="hero-editorial" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-editorial-copy">
+          <span class="editorial-kicker">Est. 2021 — Small-Batch Roastery</span>
+          <h1 class="hero-headline">
+            Good coffee.<br><em>Better days.</em>
+          </h1>
+          <p class="hero-prose">
+            Roasted twice a week on our drum roaster in Mandaluyong. We partner directly with indigenous family micro-lots in Benguet and Sagada to bring you clean, intentional coffee for quiet mornings and deliberate rituals.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalog" class="btn-editorial-primary" id="heroCtaExplore">
+              <span>Explore the Menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#story" class="link-editorial-understated">
+              Our Sourcing Story
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side Photography Frame -->
+        <div class="hero-photo-frame">
+          <div class="hero-photo-box">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80" alt="Morning pour-over coffee ritual at Sip Avenue">
+          </div>
+          <div class="photo-caption-tag">
+            <span>Plate 01 — Atok Single Origin, Hand-Poured at 93°C</span>
+            <span>Altitude 1,650m</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BRAND STORY & PHILOSOPHY
+         ========================================================================== -->
+    <section class="story-section" id="story" aria-label="Brand Philosophy">
+      <div class="container story-grid">
+        <div class="story-content">
+          <span class="editorial-kicker">Our Philosophy</span>
+          <h2>We believe the first ten minutes of your morning should belong only to you.</h2>
+          <p>
+            Coffee should not be rushed, burnt, or drowned in synthetic syrups. In a city that moves at relentless speed, Sip Avenue was built as a sanctuary for deliberate craft.
+          </p>
+          <p>
+            Every sack of green Arabica we purchase is bought directly from smallholder farming families in the Cordillera highlands at 40% above fair trade floors. When you brew our beans, you are participating in a quiet chain of human care that began thousands of meters above sea level.
+          </p>
+        </div>
+
+        <div class="story-pillars">
+          <div class="pillar-row">
+            <span class="pillar-num">01</span>
+            <div class="pillar-text">
+              <h3>High-Elevation Micro-Lots</h3>
+              <p>Hand-picked cherries grown in misty cloud forests, yielding dense beans with pronounced natural fruit sweetness.</p>
+            </div>
+          </div>
+
+          <div class="pillar-row">
+            <span class="pillar-num">02</span>
+            <div class="pillar-text">
+              <h3>Small-Batch Drum Roasting</h3>
+              <p>Slow drum curves developed individually for each harvest to accentuate origin terroir rather than roast bitterness.</p>
+            </div>
+          </div>
+
+          <div class="pillar-row">
+            <span class="pillar-num">03</span>
+            <div class="pillar-text">
+              <h3>Unbleached Plant Packaging</h3>
+              <p>100% compostable unbleached kraft paper cups and degassed recyclable valve bags for home baristas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CURATED PRODUCT CATALOG & LIVE SEARCH
+         ========================================================================== -->
+    <section class="catalog-section" id="catalog" aria-label="Curated Offerings">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-head-editorial">
+          <div class="head-title-group">
+            <span class="editorial-kicker">The Coffee Counter</span>
+            <h2>Curated Offerings</h2>
+          </div>
+          <div class="items-counter-note" id="catalogCounterNote">
+            Displaying 12 offerings
+          </div>
+        </div>
+
+        <!-- Minimalist Category Switcher -->
+        <nav class="category-tabs-nav" id="categoryTabsNav" aria-label="Filter menu by category">
+          <button type="button" class="cat-tab-btn active" data-category="all">All Offerings</button>
+          <button type="button" class="cat-tab-btn" data-category="espresso">Espresso &amp; Lattes</button>
+          <button type="button" class="cat-tab-btn" data-category="pourover">Single Origin Pour-Over</button>
+          <button type="button" class="cat-tab-btn" data-category="coldbrew">Slow Cold Steep</button>
+          <button type="button" class="cat-tab-btn" data-category="tea">Kyoto Matcha</button>
+          <button type="button" class="cat-tab-btn" data-category="pastry">Bakery &amp; Pastry</button>
+          <button type="button" class="cat-tab-btn" data-category="beans">Whole Bean &amp; Ware</button>
+        </nav>
+
+        <!-- Utility Bar (Live Search & Sorting) -->
+        <div class="catalog-utility-bar">
+          <div class="search-field-editorial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="catalogSearchInput" placeholder="Filter by note, origin, or name (e.g. ube, honey, sagada)..." aria-label="Search catalog">
+            <span class="search-clear-cross" id="searchClearBtn" title="Clear search">✕</span>
+          </div>
+
+          <div class="sort-and-meta">
+            <div class="sort-select-box">
+              <label for="catalogSortSelect">Sort by:</label>
+              <select id="catalogSortSelect" class="editorial-select" aria-label="Sort products">
+                <option value="featured">Featured Curations</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Top Guest Rating</option>
+                <option value="name">Alphabetical (A - Z)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products Editorial Grid -->
+        <div class="products-editorial-grid" id="productsGrid" role="region" aria-live="polite">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED CAMPAIGN SPREAD — PRINT EDITORIAL ADVERTISEMENT
+         ========================================================================== -->
+    <section class="campaign-section" id="campaign" aria-label="Featured Campaign">
+      <div class="container">
+        <div class="campaign-spread">
+          <div class="campaign-visual-col">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=80" alt="Almond croissant fresh from deck oven">
+          </div>
+          <div class="campaign-copy-col">
+            <span class="editorial-kicker">Autumn Special</span>
+            <h3>The Morning Ritual Pair</h3>
+            <p>
+              Pair any of our single-origin pour-overs with our twice-baked almond croissant made with laminated French butter dough and almond frangipane. Freshly pulled and baked daily by 6:30 AM.
+            </p>
+            <div class="campaign-code-block copy-campaign-code" data-code="RITUAL15" title="Click to copy voucher code">
+              <span>Voucher Code</span>
+              <strong>RITUAL15</strong>
+              <span style="text-decoration: underline; font-size: 0.72rem;">Copy Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CUSTOMER TESTIMONIALS — GUESTBOOK JOURNAL
+         ========================================================================== -->
+    <section class="journal-section" id="journal" aria-label="Excerpts from the Counter">
+      <div class="container">
+        <div class="section-head-editorial">
+          <div class="head-title-group">
+            <span class="editorial-kicker">Guestbook</span>
+            <h2>Excerpts from the Counter</h2>
+          </div>
+          <button type="button" class="btn-editorial-primary" id="openReviewModalBtn">
+            <span>Write a Note</span>
+          </button>
+        </div>
+
+        <div class="journal-grid" id="journalGrid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAFÉ LOCATIONS & TASTING ROOMS
+         ========================================================================== -->
+    <section class="story-section" id="locations" aria-label="Café Locations" style="background: var(--c-cream);">
+      <div class="container">
+        <div class="section-head-editorial" style="margin-bottom: 2.5rem;">
+          <div class="head-title-group">
+            <span class="editorial-kicker">Sanctuaries</span>
+            <h2>Our Tasting Rooms</h2>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--c-espresso-muted);">Slow bars open seven days a week.</p>
+        </div>
+
+        <div class="journal-grid">
+          <div class="journal-card">
+            <span class="journal-order-tag">Flagship Roastery</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Salcedo Village</h3>
+            <p style="font-size: 0.88rem; color: var(--c-espresso-muted); margin-bottom: 1rem;">
+              118 Tordesillas St., Salcedo Village, Makati City
+            </p>
+            <div class="journal-author-row">
+              <strong>Mon – Sun: 7:00 AM – 10:00 PM</strong>
+              <span>(02) 8810-7733</span>
+            </div>
+          </div>
+
+          <div class="journal-card">
+            <span class="journal-order-tag">Slow Pour Bar</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">BGC High Street</h3>
+            <p style="font-size: 0.88rem; color: var(--c-espresso-muted); margin-bottom: 1rem;">
+              One Bonifacio High Street, 5th Ave, Taguig City
+            </p>
+            <div class="journal-author-row">
+              <strong>Mon – Sun: 6:30 AM – 11:00 PM</strong>
+              <span>(02) 8892-4412</span>
+            </div>
+          </div>
+
+          <div class="journal-card">
+            <span class="journal-order-tag">Courtyard Tasting Room</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Tomas Morato</h3>
+            <p style="font-size: 0.88rem; color: var(--c-espresso-muted); margin-bottom: 1rem;">
+              Scout Gandia cor. Tomas Morato Ave, Quezon City
+            </p>
+            <div class="journal-author-row">
+              <strong>Mon – Sun: 7:00 AM – 11:30 PM</strong>
+              <span>(02) 8921-5509</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MULTI-COLUMN EDITORIAL FOOTER
+       ========================================================================== -->
+  <footer class="site-footer-editorial" id="siteFooter">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div class="footer-col-brand">
+          <span class="brand-wordmark">Sip Avenue</span>
+          <p>
+            An independent specialty coffee roastery dedicated to Cordillera single origins, mindful brewing, and everyday rituals in Manila.
+          </p>
+          <div class="footer-hours-block">
+            Roasting Facility: Mandaluyong City<br>
+            Direct Trade Inquiries: sourcing@sipavenue.ph
+          </div>
+        </div>
+
+        <div class="footer-col-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#catalog">The Counter Menu</a></li>
+            <li><a href="#catalog">Sagada Whole Beans</a></li>
+            <li><a href="#story">Our Sourcing Philosophy</a></li>
+            <li><a href="#campaign">Seasonal Pair</a></li>
+            <li><a href="#locations">Café Sanctuaries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-links">
+          <h4>Brew Guides</h4>
+          <ul>
+            <li><a href="#catalog">V60 Pour-Over Ratio</a></li>
+            <li><a href="#catalog">Kyoto Cold Steep Recipe</a></li>
+            <li><a href="#catalog">Water Temperature Guide</a></li>
+            <li><a href="#journal">Guestbook Stories</a></li>
+            <li><a href="#">Wholesale &amp; Supply</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-block">
+          <h4>The Morning Dispatch</h4>
+          <p>A quiet bi-weekly digest on harvest seasons, roasting notes, and new single origins.</p>
+          <form id="footerNewsletterForm" class="newsletter-input-wrap">
+            <input type="email" id="newsletterEmailInput" placeholder="Your email address" required aria-label="Email for dispatch">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Sip Avenue Coffee Co. All rights reserved. Handcrafted in the Philippines.</span>
+        <div class="payment-methods-inline" aria-label="Supported Payment Methods">
+          <span>GCash</span>
+          <span>·</span>
+          <span>Maya</span>
+          <span>·</span>
+          <span>Cash on Delivery</span>
+          <span>·</span>
+          <span>Visa &amp; Mastercard</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SHOPPING BAG SLIDE-OVER DRAWER
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="cartDrawerBackdrop"></div>
+  <aside class="editorial-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="drawer-head-row">
+      <h3>Your Bag</h3>
+      <button type="button" class="drawer-close-btn" id="closeCartDrawerBtn" aria-label="Close bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-complimentary-notice" id="freeDeliveryNoticeText">
+      Orders over <strong>₱800</strong> ship complimentary within Metro Manila.
+    </div>
+
+    <div class="drawer-scroll-body">
+      <div class="drawer-items-list" id="cartItemsContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+
+    <div class="drawer-footer-tray">
+      <div class="drawer-promo-field">
+        <input type="text" id="cartVoucherInput" placeholder="Voucher Code (e.g. RITUAL15)" aria-label="Voucher input">
+        <button type="button" id="applyVoucherBtn">Apply</button>
+      </div>
+
+      <div class="applied-voucher-chip" id="appliedVoucherChip" style="display: none;">
+        <span id="appliedVoucherText">RITUAL15 (15% off)</span>
+        <button type="button" onclick="removeVoucher()" style="color: inherit; font-size: 0.9rem;" title="Remove voucher">✕</button>
+      </div>
+
+      <div class="drawer-summary-lines">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="cartSubtotalText">₱0</span>
+        </div>
+        <div class="summary-line" id="discountLineRow" style="display: none; color: var(--c-olive);">
+          <span>Voucher Discount</span>
+          <span id="cartDiscountText">-₱0</span>
+        </div>
+        <div class="summary-line">
+          <span>Metro Manila Delivery</span>
+          <span id="cartDeliveryText">₱65</span>
+        </div>
+        <div class="summary-line line-total">
+          <span>Estimated Total</span>
+          <span id="cartGrandTotalText">₱0</span>
+        </div>
+      </div>
+
+      <button type="button" class="btn-drawer-checkout" id="openCheckoutModalBtn">
+        <span>Proceed to Checkout</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       FAVORITES SLIDE-OVER DRAWER
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="favDrawerBackdrop"></div>
+  <aside class="editorial-drawer" id="favoritesDrawer" aria-label="Saved Favorites">
+    <div class="drawer-head-row">
+      <h3>Saved Offerings</h3>
+      <button type="button" class="drawer-close-btn" id="closeFavDrawerBtn" aria-label="Close saved items">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-scroll-body">
+      <div class="drawer-items-list" id="favoritesContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       PRODUCT DETAILS & CUSTOMIZATION MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="detailsModalBackdrop"></div>
+  <div class="editorial-modal-box" id="productDetailsModal" role="dialog" aria-modal="true" aria-labelledby="modalItemTitle">
+    <button type="button" class="modal-close-trigger" id="closeDetailsModalBtn" aria-label="Close details">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="modal-layout-grid">
+      <div class="modal-media-col">
+        <img src="" alt="" id="modalItemImg">
+      </div>
+
+      <div class="modal-info-col">
+        <div class="modal-badge-row">
+          <span class="product-badge-pill" id="modalItemBadge" style="position: static;">House Favorite</span>
+        </div>
+        <h3 class="modal-item-title" id="modalItemTitle">Item Name</h3>
+        <div class="modal-item-price" id="modalItemPrice">₱185</div>
+        <p class="modal-item-desc" id="modalItemDesc">Item description.</p>
+
+        <!-- Size Options -->
+        <div class="modal-option-segment" id="modalSizeSegment">
+          <span class="segment-label">Serving Size</span>
+          <div class="segment-pills" id="modalSizePills">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Temperature / Brew Style -->
+        <div class="modal-option-segment" id="modalTempSegment">
+          <span class="segment-label">Preparation Style</span>
+          <div class="segment-pills" id="modalTempPills">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Milk Options -->
+        <div class="modal-option-segment" id="modalMilkSegment">
+          <span class="segment-label">Dairy &amp; Plant Milk</span>
+          <div class="segment-pills" id="modalMilkPills">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Sweetness -->
+        <div class="modal-option-segment" id="modalSweetSegment">
+          <span class="segment-label">Sweetness Preference</span>
+          <div class="segment-pills" id="modalSweetPills">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="modal-footer-action">
+          <div class="stepper-ui">
+            <button type="button" class="stepper-btn" id="modalQtyMinus">-</button>
+            <span class="stepper-val" id="modalQtyVal">1</span>
+            <button type="button" class="stepper-btn" id="modalQtyPlus">+</button>
+          </div>
+          <button type="button" class="btn-modal-add" id="modalConfirmAddBtn">
+            Add to Bag
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CHECKOUT MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="checkoutModalBackdrop"></div>
+  <div class="editorial-modal-box checkout-modal-box" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <button type="button" class="modal-close-trigger" id="closeCheckoutModalBtn" aria-label="Close checkout">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="checkout-head-bar">
+      <h3 id="checkoutTitle">Order Dispatch</h3>
+      <p style="font-size: 0.85rem; color: var(--c-espresso-muted); margin-top: 0.2rem;">
+        Fulfilled freshly from our nearest tasting room
+      </p>
+    </div>
+
+    <form class="checkout-form-body" id="checkoutForm">
+      <!-- Fulfillment Switch -->
+      <div class="fulfillment-switch">
+        <button type="button" class="fulfillment-btn active" data-type="delivery">
+          Complimentary Delivery
+        </button>
+        <button type="button" class="fulfillment-btn" data-type="pickup">
+          Tasting Room Pickup (Salcedo)
+        </button>
+      </div>
+
+      <span class="checkout-section-heading">1. Guest Details</span>
+      <div class="form-grid-duo">
+        <div class="form-field-group">
+          <label for="checkoutName">Full Name *</label>
+          <input type="text" id="checkoutName" class="form-text-input" placeholder="e.g. Maria Santos" required>
+        </div>
+        <div class="form-field-group">
+          <label for="checkoutPhone">Mobile Phone (+63) *</label>
+          <input type="tel" id="checkoutPhone" class="form-text-input" placeholder="+63 917 123 4567" required>
+        </div>
+      </div>
+      <div class="form-field-group">
+        <label for="checkoutEmail">Email Address (for confirmation dispatch) *</label>
+        <input type="email" id="checkoutEmail" class="form-text-input" placeholder="maria@domain.ph" required>
+      </div>
+
+      <div id="checkoutAddressSection">
+        <span class="checkout-section-heading" style="margin-top: 1.5rem;">2. Delivery Destination</span>
+        <div class="form-field-group">
+          <label for="checkoutAddress">Street Address / Building &amp; Unit *</label>
+          <input type="text" id="checkoutAddress" class="form-text-input" placeholder="Unit, Street, Barangay, City">
+        </div>
+        <div class="form-field-group">
+          <label for="checkoutNotes">Preparation or Courier Notes (Optional)</label>
+          <input type="text" id="checkoutNotes" class="form-text-input" placeholder="e.g. Doorbell is quiet, leave with front desk">
+        </div>
+      </div>
+
+      <span class="checkout-section-heading" style="margin-top: 1.5rem;">3. Preferred Settlement Method</span>
+      <div class="payment-select-grid">
+        <div class="payment-tile active" data-method="gcash">
+          <strong>GCash</strong>
+          <div style="font-size: 0.72rem; color: var(--c-espresso-faint); margin-top: 2px;">App / QR Ph</div>
+        </div>
+        <div class="payment-tile" data-method="maya">
+          <strong>Maya</strong>
+          <div style="font-size: 0.72rem; color: var(--c-espresso-faint); margin-top: 2px;">Wallet / Cards</div>
+        </div>
+        <div class="payment-tile" data-method="cod">
+          <strong>Cash on Del.</strong>
+          <div style="font-size: 0.72rem; color: var(--c-espresso-faint); margin-top: 2px;">Exact change</div>
+        </div>
+        <div class="payment-tile" data-method="card">
+          <strong>Visa / MC</strong>
+          <div style="font-size: 0.72rem; color: var(--c-espresso-faint); margin-top: 2px;">Card terminal</div>
+        </div>
+      </div>
+
+      <!-- Itemized Review Box -->
+      <div class="checkout-review-tray" id="checkoutReviewTray">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <button type="submit" class="btn-drawer-checkout" id="submitOrderBtn" style="width: 100%;">
+        <span>Place Order (<span id="checkoutSubmitTotalText">₱0</span>)</span>
+      </button>
+    </form>
+  </div>
+
+  <!-- ==========================================================================
+       ORDER CONFIRMATION (JAPANESE PAPER RECEIPT SLIP STYLE)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="confirmationModalBackdrop"></div>
+  <div class="editorial-modal-box confirmation-slip-modal" id="confirmationModal" role="dialog" aria-modal="true">
+    <span class="editorial-kicker">Order Dispatched</span>
+    <h3 style="font-size: 1.55rem; margin-bottom: 0.4rem;">Brewing at the Counter</h3>
+    <p style="font-size: 0.88rem; color: var(--c-espresso-muted);">
+      Thank you for supporting Philippine mountain coffee. Our baristas are grinding your beans now.
+    </p>
+
+    <div class="paper-receipt" id="confirmationReceiptBody">
+      <!-- Injected by app.js -->
+    </div>
+
+    <button type="button" class="btn-editorial-primary" id="closeConfirmationBtn" style="width: 100%; justify-content: center;">
+      Return to the Menu
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       WRITE A REVIEW / GUESTBOOK MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="reviewModalBackdrop"></div>
+  <div class="editorial-modal-box confirmation-slip-modal" id="reviewModal" role="dialog" aria-modal="true" style="text-align: left; max-width: 500px;">
+    <button type="button" class="modal-close-trigger" id="closeReviewModalBtn" aria-label="Close review modal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <span class="editorial-kicker">Guestbook Entry</span>
+    <h3 style="font-size: 1.45rem; margin-bottom: 0.3rem;">Leave a Note</h3>
+    <p style="font-size: 0.85rem; color: var(--c-espresso-muted); margin-bottom: 1.5rem;">
+      Share your thoughts on the roast, extraction, or quiet moments with your cup.
+    </p>
+
+    <form id="guestbookReviewForm">
+      <div class="form-field-group">
+        <label for="reviewAuthorInput">Your Name *</label>
+        <input type="text" id="reviewAuthorInput" class="form-text-input" placeholder="e.g. Mateo Reyes" required>
+      </div>
+
+      <div class="form-field-group">
+        <label for="reviewLocationInput">Neighborhood / City</label>
+        <input type="text" id="reviewLocationInput" class="form-text-input" placeholder="e.g. Salcedo Village, Makati">
+      </div>
+
+      <div class="form-field-group">
+        <label for="reviewProductSelect">Which offering did you enjoy?</label>
+        <select id="reviewProductSelect" class="form-text-input" style="cursor: pointer;">
+          <!-- Injected by app.js -->
+        </select>
+      </div>
+
+      <div class="form-field-group">
+        <label for="reviewCommentInput">Your Note / Review *</label>
+        <textarea id="reviewCommentInput" class="form-text-input" rows="3" placeholder="How was the aroma, temperature, and balance?" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-editorial-primary" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+        Publish Note to Journal
+      </button>
+    </form>
+  </div>
+
+  <!-- Toast Notification Tray -->
+  <div class="editorial-toast-tray" id="toastTray" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
